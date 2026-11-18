@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "solar-scooter-rental",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "solar-scooter-rental-db",
+      "database_id": "8e64da37-6136-4bf1-beb6-40172adf5c91",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
